@@ -1,1 +1,1 @@
-# BMS- Bank mnagemnet system
+# BMS- Bank managemnet system
