@@ -8,7 +8,7 @@
 		<version>3.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.cognizant.bms</groupId>
+	<groupId>com.bms</groupId>
 	<artifactId>Bank-Management-System</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Bank-Management-System</name>
