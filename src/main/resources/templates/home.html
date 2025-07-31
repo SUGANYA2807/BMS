@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h2>Logged in</h2>
+
+<form th:action="@{/logout}" method="post">
+    <a th:href="@{/customer/updateCustomerDetails}" style="text-decoration: none; color: blue;">Update your details</a><br><br>
+    <a th:href="@{/customer/applyLoan}" style="text-decoration: none; color: blue;">Apply loan</a><br><br>
+    <a th:href="@{/customer/viewLoans}" style="text-decoration: none; color: blue;">View loan</a><br><br>
+    <div th:if="${successMessage}" class="alert alert-success">
+        <p th:text="${successMessage}"></p>
+    </div>
+    <button type="submit">Log out</button>
+</form>
+</body>
+</html>

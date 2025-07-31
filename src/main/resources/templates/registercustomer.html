@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register New Customer</title>
+</head>
+<body>
+<h1>Sign in new customer</h1>
+<form th:action="@{/customer/registercustomer}" method="post" th:object="${customer}">
+    <label for="Name">Name:</label>
+    <input type="text" id="name" name="name" th:field="*{customerName}" required><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" th:field="*{username}" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" th:field="*{password}" required><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" th:field="*{address}" required><br>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" th:field="*{state}" required><br>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" th:field="*{country}" required><br>
+
+    <label for="emailAddress">Email Address:</label>
+    <input type="email" id="emailAddress" name="emailAddress" th:field="*{emailAddress}" required><br>
+
+    <label for="pan">PAN:</label>
+    <input type="text" id="pan" name="pan" th:field="*{pan}" required><br>
+
+    <label for="contactNo">Contact No:</label>
+    <input type="text" id="contactNo" name="contactNo" th:field="*{contactNo}" required><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" th:field="*{dob}" required><br>
+
+    <label for="accountType">Account Type:</label>
+    <input type="text" id="accountType" name="accountType" th:field="*{accountType}" required><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

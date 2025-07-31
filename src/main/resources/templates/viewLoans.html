@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>View Loans</title>
+</head>
+<body>
+<h2>Your Loans</h2>
+<table border="1">
+  <thead>
+  <tr>
+    <th>Loan Type</th>
+    <th>Loan Amount</th>
+    <th>Loan Date</th>
+    <th>Rate of Interest</th>
+    <th>Duration</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="loan : ${loans}">
+    <td th:text="${loan.loanType}"></td>
+    <td th:text="${loan.loanAmount}"></td>
+    <td th:text="${loan.loanDate}"></td>
+    <td th:text="${loan.rateOfInterest}"></td>
+    <td th:text="${loan.duration}"></td>
+  </tr>
+  </tbody>
+</table>
+<a th:href="@{/home}">Back to Home</a>
+</body>
+</html>
